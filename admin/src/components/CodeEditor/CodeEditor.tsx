@@ -111,7 +111,7 @@ const CodeEditor = ({
   }
 
   // @ts-ignore
-  const theme = localStorage.getItem('STRAPI_THEME')
+  const theme = localStorage.getItem('STRAPI_THEME') || 'dark'
 
   const handleOnChange = (value: string) => {
     onChange({ target: { name, type: attribute.type, value } })
